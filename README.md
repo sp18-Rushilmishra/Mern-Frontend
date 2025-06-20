@@ -68,7 +68,9 @@ Review for Work Done on 18th June:
 
 On 18th June, you practiced HTML table concepts by creating two separate files:
 
-tables.html – This file likely contains basic HTML table structure, showcasing how to create rows, columns, headers, and data cells using <table>, <tr>, <th>, and <td> tags.
+tables.html – This file likely contains basic HTML table structure, showcasing how to create rows, columns, headers, and data 
+
+cells using <table>, <tr>, <th>, and <td> tags.
 
 rowspan and coloumnspan.html – This file demonstrates the use of rowspan and colspan attributes to merge cells across multiple rows and columns, improving table layout and presentation.
 
