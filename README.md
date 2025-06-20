@@ -63,3 +63,31 @@ References :
 
 https://www.youtube.com/watch?v=HcOc7P5BMi4&t=6751s
 https://www.w3schools.com/tags/tag_pre.asp#:~:text=The%20tag%20defines%20preformatted,in%20the%20HTML%20source%20code.
+
+Review for Work Done on 18th June:
+
+On 18th June, you practiced HTML table concepts by creating two separate files:
+
+tables.html – This file likely contains basic HTML table structure, showcasing how to create rows, columns, headers, and data cells using <table>, <tr>, <th>, and <td> tags.
+
+rowspan and coloumnspan.html – This file demonstrates the use of rowspan and colspan attributes to merge cells across multiple rows and columns, improving table layout and presentation.
+
+This activity helped reinforce your understanding of HTML tables, especially advanced cell formatting and structure organization.
+
+References : https://www.w3schools.com/html/default.asp
+
+Review for Work Done on 19th June:
+
+On 19th June, you focused on enhancing your HTML skills by working on forms and updating previous table work:
+
+forms.html – Created a basic HTML form demonstrating input types like text fields, radio buttons, checkboxes, dropdowns, and buttons. This helped solidify your understanding of how to capture user data.
+
+formaassignment.html – Built a more structured or real-world form (possibly an assignment task) that showcases practical use of various form elements, layout organization, and perhaps validation attributes.
+
+Modified rowspan and coloumnspan.html – Revisited and updated your table merging concepts, possibly refining the layout or correcting earlier issues with rowspan and colspan.
+
+This set of tasks gave you hands-on experience with form handling and advanced table structures, both of which are foundational for any web development project.
+
+References : https://www.w3schools.com/html/html_forms.asp 
+
+day 5
