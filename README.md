@@ -1,95 +1,227 @@
-# Mern-Frontend
-Day 1 - Internship Work Summary (MERN Frontend)
-Date: 16th June 2025
+Week 1: HTML Foundations
+ Day 1 – Mon, 16th June 2025
+HTML syntax is not case-sensitive.
 
-Topics Covered:
+Introduced to essential structure and layout.
 
-HTML Basics:
+Every document starts with <!DOCTYPE html> to specify HTML5.
 
-Introduction, Editors, Basic Structure, and Elements
+Headings range from <h1> (most important) to <h6>.
 
-Core Concepts Practiced:
+<br> is a self-closing tag that adds a line break.
 
-Attributes, Headings, Paragraphs, Styles, and Formatting
+Attributes enhance tags with more functionality.
 
-Advanced Essentials:
+The src in <img> supports absolute and relative URLs.
 
-Quotations, Comments, Colors, and CSS linking
-
-Interactive Elements:
-
-Hyperlinks (Links) and Images
-
-Extras:
-
-Started working on Favicon and Page Title setups
-
-Practical Work Done:
-
-Created 10+ HTML files practicing the above topics
-
-Added media (download.jpeg) and maintained README.md
-
-Folder Name: MERN-FRONTEND
-
- References Used:
-https://www.w3schools.com/html/default.asp
-https://www.youtube.com/watch?v=FmoYRiepmOE&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s&index=13
-
-Day - 2 : Internship work summary (Mern Frontend)
-
-Date : 17th June 2025
+<pre> retains text formatting like spaces and line breaks.
 
 
-Topics Covered : 
+Day 2 – Tue, 17th June 2025
+Explored inline vs block elements.
 
-Practiced and implemented various HTML tags and concepts:
+Block elements span full width; inline only wraps content.
 
-Created favicon.html to add a website icon.
+Nesting rules: block can contain inline, but not vice versa.
 
-Styled a page using internal CSS in internalcss.html.
+<iframe> embeds other web pages.
 
-Used <video> tag to embed and play memevideo.mp4.
+<video> and <audio> handle multimedia.
 
-Built and structured webpages in practicewebsite2.html.
+YouTube embeds use <iframe src="https://www.youtube.com/embed/VIDEO_ID">.
 
-Created thumbnail.html to display a video preview using an image.
+Enable autoplay/mute using ?autoplay=1&mute=1.
 
-Explored <title> tag usage in title.html.
 
-Tested multimedia handling in videotag.html.
+Day 3 – Wed, 18th June 2025
+Block elements can be laid out side-by-side with float, inline-block, or Flexbox.
 
-References :
+Use margin: auto for horizontal centering.
 
-https://www.youtube.com/watch?v=HcOc7P5BMi4&t=6751s
-https://www.w3schools.com/tags/tag_pre.asp#:~:text=The%20tag%20defines%20preformatted,in%20the%20HTML%20source%20code.
+CSS Grid: layout with display: grid and grid-template-columns.
 
-Review for Work Done on 18th June:
+Plugins extend functionality using <object>, <embed>, etc.
 
-On 18th June, you practiced HTML table concepts by creating two separate files:
+HTML tables allow merged rows/columns using rowspan, colspan.
 
-tables.html – This file likely contains basic HTML table structure, showcasing how to create rows, columns, headers, and data 
+Use table-layout: fixed to control table widths.
 
-cells using <table>, <tr>, <th>, and <td> tags.
 
-rowspan and coloumnspan.html – This file demonstrates the use of rowspan and colspan attributes to merge cells across multiple rows and columns, improving table layout and presentation.
+Day 4 – Thu, 19th June 2025
+Forms are built using <form>.
 
-This activity helped reinforce your understanding of HTML tables, especially advanced cell formatting and structure organization.
+<label> tags improve accessibility.
 
-References : https://www.w3schools.com/html/default.asp
+<input> types: text, checkbox, radio, submit, etc.
 
-Review for Work Done on 19th June:
+The name attribute is required for data submission.
 
-On 19th June, you focused on enhancing your HTML skills by working on forms and updating previous table work:
+<select> and <option> create dropdowns.
 
-forms.html – Created a basic HTML form demonstrating input types like text fields, radio buttons, checkboxes, dropdowns, and buttons. This helped solidify your understanding of how to capture user data.
+<textarea> allows multiline input.
 
-formaassignment.html – Built a more structured or real-world form (possibly an assignment task) that showcases practical use of various form elements, layout organization, and perhaps validation attributes.
+<fieldset> groups related inputs; <legend> gives a label.
 
-Modified rowspan and coloumnspan.html – Revisited and updated your table merging concepts, possibly refining the layout or correcting earlier issues with rowspan and colspan.
+<datalist> provides auto-suggested values.
 
-This set of tasks gave you hands-on experience with form handling and advanced table structures, both of which are foundational for any web development project.
 
-References : https://www.w3schools.com/html/html_forms.asp 
+Day 5 – Fri, 20th June 2025
+If both internal and external CSS exist, the last loaded rule wins.
 
-day 5
+Inline styles take highest priority.
+
+RGBA allows transparency with values from 0 to 1.
+
+Flexbox: justify-content aligns items on main axis; align-items on cross axis.
+
+Explored spacing tools like margin, padding, border.
+
+Git basics: init, checkout -b, push, pull, merge.
+
+Avoid git add . to prevent unwanted files.
+
+Week 2: JavaScript Begins + CSS Practice
+Day 6 – Mon, 23rd June 2025
+JavaScript variable types: var, let, const.
+
+var: function-scoped, hoisted, can re-declare.
+
+let: block-scoped, can reassign but not re-declare.
+
+const: block-scoped, can't reassign or re-declare.
+
+Only var is hoisted fully.
+
+JS primitive types: string, number, boolean, bigint, null, undefined, symbol, object.
+
+
+Day 7 – Tue, 24th June 2025
+JS operations proceed left-to-right:
+
+5 + 5 + "hi" = 10hi, "hi" + 5 + 5 = hi55.
+
+Learned to make designs responsive using @media.
+
+Started working on html-css-task mini-project.
+
+
+Days 8–10 – 25th to 27th June 2025
+Created multiple sections with containers for layout control.
+
+Applied CSS grid, flex, and spacing utilities.
+
+JS used to build a toggleable navbar and scroll-to-top button.
+
+Ensured breakpoint-specific styling with media queries.
+
+Used semantic tags like <section>, <main> for clean markup.
+
+Prefer px over % for consistent sizing.
+
+Used z-index, overflow, max-width, and width: 100% for modern, fluid designs.
+
+Week 3: Arrays, Objects, Functions
+
+Day 11 – Mon, 30th June 2025
+JS strings: slice(), split() – strings are immutable.
+
+Arrays: push(), pop(), shift(), unshift(), splice(), slice().
+
+typeof [] returns object.
+
+Array sorting needs a comparator for numbers.
+
+Learned iteration: forEach(), map(), filter(), flatMap().
+
+
+
+Objects hold data in key-value pairs.
+
+Accessed data via dot and bracket notations.
+
+Deleted properties with delete obj.key.
+
+Used nested objects and loops like for...in.
+
+Learned Object.keys(), Object.values(), Object.entries().
+
+
+Day 13 – Wed, 2nd July 2025
+Explored:
+
+Function declarations
+
+Function expressions
+
+Arrow functions
+
+Used default and rest parameters (...args).
+
+Practiced IIFE (Immediately Invoked Function Expressions).
+
+
+Week 4: Execution, Async, DOM, Events
+
+Day 14 – Thu, 3rd July 2025
+JS runs in two steps:
+
+Creation – memory setup
+
+Execution – code runs
+
+Each function adds to the call stack.
+
+Lexical scope enables closures.
+
+Hoisting varies: var gets undefined, let/const enter TDZ.
+
+Day 15 – Fri, 4th July 2025
+Async JS allows non-blocking behavior.
+
+setTimeout, setInterval run in background.
+
+Promises introduced:
+
+then(), catch(), finally()
+
+Promise.all(), Promise.race(), Promise.allSettled()
+
+Day 16 – Mon, 7th July 2025
+async/await simplifies promise chains.
+
+await pauses execution until resolution.
+
+Used try...catch to handle errors cleanly.
+
+
+Day 17 – Tue, 8th July 2025
+DOM = browser's representation of HTML structure.
+
+Element selection using:
+
+getElementById, querySelector, querySelectorAll
+
+Manipulated content via textContent, innerHTML.
+
+Added/removed nodes with createElement, appendChild, removeChild.
+
+Day 18 – Wed, 9th July 2025
+Event listeners added using addEventListener().
+
+Event object: target, type, preventDefault(), etc.
+
+Event bubbling/capturing handled with stopPropagation().
+
+Debouncing/throttling improves performance.
+
+
+Day 19 – Thu, 10th July 2025
+Mini project combining everything:
+
+Theme toggle
+
+Tab switcher
+
+API fetch and display
+
+Practiced full interaction cycle: UI → JS → DOM Update.
