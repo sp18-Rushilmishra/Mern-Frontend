@@ -1,4 +1,4 @@
-# ✅ Student Records System – JavaScript Assignment
+#  Student Records System – JavaScript Assignment
 
 This project demonstrates core JavaScript concepts using a **Student Record Management System**. It contains sample data and several utility functions to analyze and manipulate student records.
 
