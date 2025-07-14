@@ -89,24 +89,24 @@ const studentMatrix = students.map(function(s) {
 
 //   CORE STUDENT UTILITIES  (pure, non‑mutating)
 
-const addStudent = function(list, newStudent) {
+const addStudent = function(students, newStudent) {
   return list.concat([newStudent]);
 };
 
-const removeStudentById = function(list, id) {
+const removeStudentById = function(students, id) {
   return list.filter(function(s) {
     return s.id !== id;
   });
 };
 
-const updateStudentName = function(list, id, newName) {
+const updateStudentName = function(students, id, newName) {
   return list.map(function(s) {
     return (s.id === id) ? Object.assign({}, s, {name: newName}) : s;
   });
 };
 
-const getStudentById = function(list, id) {
-  return list.find(function(s) {
+const getStudentById = function(students, id) {
+  return students.find(function(s) {
     return s.id === id;
   }) || null;
 };
@@ -119,14 +119,13 @@ function calculateAverageGrade(student) {
   return sum / student.courses.length;
 }
 
-const getHonorRoll = function(list, threshold) {
-  return list.filter(function(s) {
+const getHonorRoll = function(students, threshold) {
+  return students.filter(function(s) {
     return calculateAverageGrade(s) >= threshold;
   });
 };
 
-function getCourseRoster(list, courseCode) {
-  // polyfill flatMap with concat + map
+function getCourseRoster(students, courseCode) {
   return [].concat.apply([], list.map(function(s) {
     var c = s.courses.find(function(ci) {
       return ci.code === courseCode;
@@ -138,24 +137,24 @@ function getCourseRoster(list, courseCode) {
 
 //   LOOP‑BASED REPORTS
 
-function printStudentSummaries(list) {
-  for (var i=0; i<list.length; i++) {
-    var s = list[i];
+function printStudentSummaries(students) {
+  for (var i=0; i<students.length; i++) {
+    var s = students[i];
     console.log(s.id + " • " + s.name + " • Avg " + calculateAverageGrade(s).toFixed(2));
   }
 }
 
-function findFirstUnderage(list, ageLimit) {
-  for (var i=0; i<list.length; i++) {
-    if (list[i].age < ageLimit) return list[i];
+function findFirstUnderage(students, ageLimit) {
+  for (var i=0; i<students.length; i++) {
+    if (students[i].age < ageLimit) return students[i];
   }
   return null;
 }
 
-function countFailingCourses(list, passMark) {
+function countFailingCourses(students, passMark) {
   var count = 0;
-  for (var i=0; i<list.length; i++) {
-    var courses = list[i].courses;
+  for (var i=0; i<students.length; i++) {
+    var courses = students[i].courses;
     for (var j=0; j<courses.length; j++) {
       if (courses[j].grade < passMark) count++;
     }
@@ -166,7 +165,7 @@ function countFailingCourses(list, passMark) {
 
 //   COURSE STATISTICS
 
-function printCourseStats(list) {
+function printCourseStats(students) {
   var buckets = {};
   list.forEach(function(s) {
     s.courses.forEach(function(c) {
@@ -208,8 +207,8 @@ function getCoursesByInstructor(catalog, instructorId) {
   });
 }
 
-function totalCreditsPerStudent(list, catalog) {
-  return list.map(function(s) {
+function totalCreditsPerStudent(students, catalog) {
+  return students.map(function(s) {
     var credits = s.courses.reduce(function(tot, c) {
       var course = catalog.find(function(k) {
         return k.code === c.code;
@@ -220,8 +219,8 @@ function totalCreditsPerStudent(list, catalog) {
   });
 }
 
-function studentTranscript(list, catalog, teachers) {
-  return list.map(function(s) {
+function studentTranscript(students, catalog, teachers) {
+  return students.map(function(s) {
     var transcript = s.courses.map(function(c) {
       var courseObj = catalog.find(function(k) {
         return k.code === c.code;
@@ -239,9 +238,9 @@ function studentTranscript(list, catalog, teachers) {
   });
 }
 
-function courseAverages(list) {
+function courseAverages(students) {
   var acc = {};
-  list.forEach(function(s) {
+  students.forEach(function(s) {
     s.courses.forEach(function(c) {
       if (!acc[c.code]) acc[c.code] = [];
       acc[c.code].push(c.grade);
@@ -254,8 +253,8 @@ function courseAverages(list) {
   });
 }
 
-function topStudentsByCourse(list, courseCode, n) {
-  return list
+function topStudentsByCourse(students, courseCode, n) {
+  return students
     .map(function(s) {
       var c = s.courses.find(function(ci) {
         return ci.code === courseCode;
@@ -282,4 +281,4 @@ printCourseStats(students);
 console.log("\nTop 3 in CS101:");
 console.table(topStudentsByCourse(students, "CS101", 3));
 
-console.table(studentsForConsoleTable(students));
+
