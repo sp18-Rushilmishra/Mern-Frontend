@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Manufacturing+Consent&display=swap');
+
+
+*{
+    box-sizing : border-box;
+}
+
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    overflow: hidden;
+    margin : 220px;
+}
+
+.container{
+    display : flex;
+    /* width: 90px; */
+}
+
+.panel {
+    width: 100px;
+    background-position: center;
+    height: 330px;
+    border-radius: 50px;
+    cursor: pointer;
+    flex : 0.5;
+    margin : 10px;
+    transition : flex 0.7s ease-in;
+    position: relative;
+}
+.panel h3 {
+    position : absolute;
+    font-size: 24px;
+    opacity: 0;
+    align-items: center;
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+}
+
+@media(max-width : 300px) {
+    .container{
+        width : 100px;
+    }
+}
+    
