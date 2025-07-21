@@ -1,0 +1,39 @@
+body{
+    font-family:'segeo UI',  sans-serif ;
+    margin : 0;
+    background:  linear-gradient(to right, #dbeafe, #f0f9ff);;
+    padding: 30px;
+}
+form{
+    background-color: #ffffff ;
+    padding : 20px;
+    max-width : 700px;
+    margin : auto;
+    padding : 30px;
+    border-radius : 15px;
+}
+h1, h2 {
+      text-align: center;
+      color: #1e40af;
+    }
+    h2{
+        margin-top: 30px;
+      border-bottom: 2px solid #ddd;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+     input, select {
+      margin: 5px 0 15px 0;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #1d4ed8;
+      border-radius: 8px;
+    }
